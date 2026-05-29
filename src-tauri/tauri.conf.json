@@ -13,7 +13,7 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEzNTI2MDYwMzkxOUM4REIKUldUYnlCazVZR0JTRThMcElFMHhqWWh3MUZxR2pnRnltN1FmSXdCMUZtN1MybE82MGM1YkJ5dGQK",
       "endpoints": [
-        "https://github.com/OWNER/REPO/releases/latest/download/latest.json"
+        "https://github.com/Alamoo2023/prompt-asset-manager/releases/latest/download/latest.json"
       ]
     }
   },

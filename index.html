@@ -5515,7 +5515,8 @@
 
       try {
         // 动态导入 Tauri updater 插件
-        const updaterModule = await import('@tauri-apps/plugin-updater');
+        // 用字符串拼接避免 Vite 构建时解析 Tauri 运行时模块
+        const updaterModule = await import('@tauri-apps/' + 'plugin-updater');
         const { check } = updaterModule;
 
         const update = await check();
