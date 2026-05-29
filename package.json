@@ -1,0 +1,24 @@
+{
+  "name": "prompt-asset-manager",
+  "version": "0.1.1",
+  "description": "AI提示词资产管家 — 本地离线提示词管理桌面工具",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "web:dev": "vite --host 127.0.0.1",
+    "web:build": "vite build --outDir dist",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "build:debug": "tauri build --debug",
+    "preview": "tauri build --debug && start .\\src-tauri\\target\\debug\\prompt-asset-manager.exe"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "vite": "^8.0.14"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-updater": "^2.10.1"
+  }
+}

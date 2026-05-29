@@ -1,0 +1,1 @@
+{"default-capability":{"identifier":"default-capability","description":"默认权限配置，允许所有窗口操作","local":true,"windows":["main"],"permissions":["core:default","opener:default"]}}

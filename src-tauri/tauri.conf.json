@@ -1,0 +1,60 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicepkg/vscode-tauri/main/packages/tauri-conf/tauri.conf.schema.json",
+  "productName": "AI提示词资产管家",
+  "version": "0.1.1",
+  "identifier": "prompt-asset-manager.app",
+  "build": {
+    "beforeDevCommand": "npm run web:dev",
+    "beforeBuildCommand": "npm run web:build",
+    "devUrl": "http://127.0.0.1:5173",
+    "frontendDist": "../dist"
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEzNTI2MDYwMzkxOUM4REIKUldUYnlCazVZR0JTRThMcElFMHhqWWh3MUZxR2pnRnltN1FmSXdCMUZtN1MybE82MGM1YkJ5dGQK",
+      "endpoints": [
+        "https://github.com/OWNER/REPO/releases/latest/download/latest.json"
+      ]
+    }
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AI提示词资产管家",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": ["SimpChinese", "English"],
+        "displayLanguageSelector": true,
+        "installerIcon": "icons/icon.ico",
+        "headerImage": null,
+        "sidebarImage": null
+      }
+    }
+  }
+}
